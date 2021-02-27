@@ -32,7 +32,7 @@ print(dic)
 """
 
 number = random.randint(1, 20)
-chances = 5
+chances = 0
 
 while chances > 0:
     user_bet = int(
@@ -49,3 +49,18 @@ while chances > 0:
 
     if chances == 0:
         print("Все, вы не выиграли. Игра завершилась. Мое число было - {}".format(number))
+
+
+"""
+Задание 3
+Дана строка нечетной длины больше 7 символов, вернуть строку, состоящую из трех
+средних символов данной строки
+Пример:
+some_string = "Adverts"
+Output: "ver"
+"""
+
+some_string = "gggggggggggggggverggggggggggggggg"
+
+z = int((len(some_string) / 2) - (0.5))
+print(some_string[z-1] + some_string[z] + some_string[z+1])

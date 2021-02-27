@@ -32,7 +32,7 @@ print(dic)
 """
 
 number = random.randint(1, 20)
-chances = 0
+chances = 5
 
 while chances > 0:
     user_bet = int(
@@ -64,3 +64,21 @@ some_string = "gggggggggggggggverggggggggggggggg"
 
 z = int((len(some_string) / 2) - (0.5))
 print(some_string[z-1] + some_string[z] + some_string[z+1])
+
+
+"""
+Задание 4
+Дается 2 строки "Aidana" и "Adilet" . Вам нужно в результате получить смешанную
+строку из двух имен, буква за буквой.
+Output: "AAiddialneat"
+"""
+
+first_name = "Aidana"
+second_name = "Adilet"
+
+result = ''
+
+for i in range(6):
+    result += first_name[i] + second_name[i]
+
+print(result)
